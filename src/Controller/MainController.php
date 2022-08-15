@@ -59,6 +59,6 @@ class MainController extends AbstractController
     private function getNewFileName(string $originalName, string $extension): string
     {
 //        return Urlizer::urlize($originalName) . '-' . uniqid('') . '.' . $extension;
-        return Urlizer::urlize($originalName) . $extension;
+        return Urlizer::urlize($originalName) . '.' . $extension;
     }
 }
